@@ -428,6 +428,10 @@ tplink,tl-wr902ac-v3)
 	ucidef_set_led_wlan "wlan2g" "wlan2g" "$boardname:green:wlan" "phy0tpt"
 	ucidef_set_led_switch "lan" "lan" "$boardname:green:lan" "switch0" "0x10"
 	;;
+my-tl-wdr5620-v3)
+	ucidef_set_led_default "power" "power" "$boardname:white:power" "1"
+	ucidef_set_led_default "power2" "power2" "$boardname:white:power2" "1"
+	;;
 u25awf-h1)
 	set_wifi_led "u25awf:red:wifi"
 	ucidef_set_led_netdev "eth" "eth" "u25awf:green:lan" "eth0"
