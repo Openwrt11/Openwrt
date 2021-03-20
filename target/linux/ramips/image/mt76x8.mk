@@ -55,6 +55,14 @@ define Device/duzun-dm06
 endef
 TARGET_DEVICES += duzun-dm06
 
+define Device/my-tl-wdr5620-v3
+  DTS := MY-TL-WDR5620V3
+  IMAGE_SIZE := 7872k
+  DEVICE_TITLE := MY-TL-LINK WDR5620 V3 MT7628AN
+  DEVICE_PACKAGES := luci luci-app-commands aircrack-ng
+endef
+TARGET_DEVICES += my-tl-wdr5620-v3
+
 define Device/gl-mt300n-v2
   DTS := GL-MT300N-V2
   IMAGE_SIZE := 16064k
