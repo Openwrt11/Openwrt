@@ -1,6 +1,12 @@
 #
 # MT76x8 Profiles
-#
+#define Device/my-tl-wdr5620-v3
+  DTS := MY-TL-WDR5620V3
+  IMAGE_SIZE := 7872k
+  DEVICE_TITLE := MY-TL-LINK WDR5620 V3 MT7628AN
+  DEVICE_PACKAGES := luci luci-app-commands aircrack-ng
+endef
+TARGET_DEVICES += my-tl-wdr5620-v3
 
 define Device/tplink
   TPLINK_FLASHLAYOUT :=
@@ -18,6 +24,13 @@ define Device/tplink
 endef
 DEVICE_VARS += TPLINK_FLASHLAYOUT TPLINK_HWID TPLINK_HWREV TPLINK_HWREVADD TPLINK_HVERSION
 
+define Device/my-tl-wdr5620-v3
+  DTS := MY-TL-WDR5620V3
+  IMAGE_SIZE := 7872k
+  DEVICE_TITLE := MY-TL-LINK WDR5620 V3 MT7628AN
+  DEVICE_PACKAGES := luci luci-app-commands aircrack-ng
+endef
+TARGET_DEVICES += my-tl-wdr5620-v3
 
 define Device/alfa-network_awusfree1
   DTS := AWUSFREE1
